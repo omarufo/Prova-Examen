@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sea Harvest</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Abel|Barlow|Barlow+Condensed|Rakkas|Roboto+Condensed:400,700|Roboto+Mono:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style_grid.css">
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		img{
+			width: 100%;
+		}
+		.container{
+			width: 1280px;
+			margin: auto;
+			display: table;
+			border-top: 4px;
+			border-right: 4px;
+			border-left: 0px;
+			border-bottom: 0px;
+			border-color: #221f20;
+			border-style: solid;
+		}
+		nav a{
+			text-align: center;
+			height: 39px;
+		}
+		body{
+			background: #fffcf9;
+		}
+		header{
+			margin-top: 32px;
+			height: 234px;
+		}
+		header h1{
+			font-family: 'Roboto Condensed', sans-serif;
+			font-weight: 700;
+			font-size: 96px;
+			line-height: 96px;
+			letter-spacing: 0.01em;
+		}
+		header h2{
+			font-family: 'Roboto Condensed', sans-serif;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: ;
+			letter-spacing: 0.01em;
+		}
+		header p1{
+			font-family: 'Roboto Mono', monospace;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 19px;
+		}
+		header p2{
+			font-family: 'Roboto Mono', monospace;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 19px;
+			bottom: 10px;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+		ul li{
+			text-align: center;
+			list-style-type: none;
+			display: inline-block;
+			font-family: 'Roboto Mono', monospace;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 19px;
+			color: black;
+		}
+		section{
+			position: relative;
+			border-width: ;
+			border-color: #221f20;
+			border-style: solid;
+		}
+		main p{
+			font-family: 'Roboto Mono', monospace;
+			font-weight: 400;
+			font-size: 13px;
+		}
+		main h2{
+			font-family: 'Roboto Condensed', sans-serif;
+		}
+		main h3{
+			font-family: 'Rakkas', cursive;
+			font-size: 96px;
+			line-height: 0.9;
+			letter-spacing: 1.1;
+			word-spacing: 16px;
+			z-index: 10;
+		}
+		main h4{
+			font-family: 'Roboto Mono', sans-serif;
+			font-weight: 500;
+			font-size: 1em;
+			line-height: 1.8em;
+			letter-spacing: ;
+			font font-weight: ;
+			bottom: 10px;
+		}
+		main h5{
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 1em;
+		}
+		main h6{
+			font-family: 'Rakkas', cursive;
+			font-size: 42px;
+			line-height: 0.9;
+			letter-spacing: 1.9;
+			word-spacing: 10px;
+			padding: 0px 0px 0px 0px;
+		}
+		main h7{
+			font-family: 'Rakkas', cursive;
+			font-size: 70px;
+			line-height: 0.9;
+			word-spacing: 16px;
+			
+		}
+		main h8{
+			font-family: 'Rakkas', cursive;
+			font-size: 85px;
+			line-height: 0.9;
+			word-spacing: 16px;	
+		}
+		c2 p{
+			font-size: 20px;
+		}
+		#head1, #head2, #head3{
+			height: 184px;
+			position: relative;
+			text-align: center;
+			overflow: hidden;
+		}
+		#head1{
+			padding: 30px 30px 30px 30px;
+			border-right: 4px;
+			border-top: 0px;
+			border-left: 4px;
+			border-bottom: 4px;
+			border-color: #221f20;
+			border-style: solid;
+		}
+		#head2{
+			padding: 22px 22px 22px 22px;
+			border-right: 4px;
+			border-top: 0px;
+			border-left: 0px;
+			border-bottom: 4px;
+			border-color: #221f20;
+			border-style: solid;
+		}
+		#head3{
+			padding: 48px 36px 36px 36px;
+			border-right: 0px;
+			border-top: 0px;
+			border-left: 0px;
+			border-bottom: 4px;
+			border-color: #221f20;
+			border-style: solid;
+		}
+		#nv{
+			width: 100%;
+			position: relative;
+			border-right: 0;
+			border-top: 2px;
+			border-left: 0;
+			border-bottom: 0;
+			border-color: #221f20;
+			border-style: solid;
+		}
+		#n1, #n2, #n3, #n4{
+			padding: 15px;
+			height: 50px;
+			border-right: 0;
+			border-top: 0px;
+			border-left: 4px;
+			border-bottom: 0;
+			border-color: #221f20;
+			border-style: solid;
+		}
+		#l1{
+			height: 696px;
+		}
+		#c1, #c2, #c3, #c4{
+			height: 100%;
+			overflow: hidden;
+			padding: 32px 32px 32px 32px;
+			border-right: 0;
+			border-top: 0px;
+			border-left: 4px;
+			border-bottom: 0;
+			border-color: #221f20;
+			border-style: solid;
+		}
+		#c2, #c3{
+			text-align: center;
+		}
+		#c4 p{
+			columns: 100px 2;
+			column-gap: 32px;
+		}
+		#c3, #c4{
+			border-right: 0;
+			border-top: 4px;
+			border-left: 4px;
+			border-bottom: 0;
+			border-color: #221f20;
+			border-style: solid;
+		}
+		#extra1{
+			height: 632px;
+			width: 362px;
+			padding: 30px 30px 30px 30px;
+			border-width: 2px 2px 2px 2px;
+			border-color: #221f20;
+			border-style: dashed;
+			text-transform: uppercase;
+		}
+		#extra2{
+			font-family: 'Roboto Mono', monospace;
+			font-weight: 400;
+			text-decoration: none;
+			list-style-type: none;
+			display: inline-block;
+			height: 456px;
+			width: 256px;
+			border-width: 2px 2px 2px 2px;
+			border-color: #221f20;
+			border-style: dashed;
+		}
+		#l2{
+			height: 520px;
+		}
+		#l3{
+			height: 848px;
+		}
+		#c5, #c6, #c7{
+			height: 848px;
+			padding: 32px 32px 32px 32px;
+			border-right: 0;
+			border-top: 4px;
+			border-left: 4px;
+			border-bottom: 0;
+			border-color: #221f20;
+			border-style: solid;
+		}
+		#c8{
+			height: 96px;
+			padding: 32px 32px 32px 32px;
+		}
+		#c9{
+			height: 96px;
+			padding: 10px 0px 0px 0px;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-weight: 700;
+			font-size: 60px;
+			position: absolute;
+			border-right: 0;
+			border-top: 4px;
+			border-left: 0;
+			border-bottom: 0;
+			border-color: #221f20;
+			border-style: solid;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			text-align: center;	
+		}
+		#fish{
+			height: 100%;
+			width: auto;
+			position: absolute;
+			overflow: hidden;
+			bottom: 10px;
+			right: 10px;
+			left: 640px;
+			top: 5px;
+			z-index: -10;
+		}
+		#read{
+			text-align: right;
+		}
+		footer{
+			height: 40px;
+			text-align: center;
+			list-style-type: none;
+			display: inline-block;
+			font-family: 'Roboto Mono', monospace;
+			font-weight: 500;
+			font-size: 14px;
+			margin-bottom: 32px;
+		}
+		#f1, #f2, #f3{
+			padding: 8px 0 0 0;
+			height: 40px;
+			border-right: 0;
+			border-top: 0px;
+			border-left: 4px;
+			border-bottom: 4px;
+			border-color: #221f20;
+			border-style: solid;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+				<div id="head1" class="col-2">
+				<img src="images/img1.jpg">
+			</div>
+			<div id="head2" class="col-8">
+				<p1>SUNDAY, DECEMBER 16, 2018</p1>
+				<h1>SEA HARVEST</h1>
+				<h2>FRESH SEAFOOD MARKET</h2>
+			</div>
+			<div id="head3" class="col-2">
+				<p2><b>BELCONNEN<br>MARKETS</b></p2>
+				<p2><b>FYSHWICK<br>MARKETS</b></p2>
+			</div>
+			<div id="nv">
+				<nav class="col-12">
+					<ul>
+						<li id="n1" class="col-3"><a href="#">ABOUT</a></li>
+						<li id="n2" class="col-3"><a href="#">PRODUCTS</a></li>
+						<li id="n3" class="col-3"><a href="#">CONTACT</a></li>
+						<li id="n4" class="col-3"><a href="#">ORDER</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div id="l1" class="col-12">
+				<!-- 1 -->
+				<section id="c1" class="col-8">
+					<hgroup>
+						<h3>CATCH OF THE<br>DAY</h3>
+						<h4>FROM SEA TO PLATE</h4>
+					</hgroup>
+					<div class="caixa">
+						<img src="images/img2.jpg">
+					</div>
+						<p>
+							The latest harvest has yielded deliciously fresh seafood perfect for devouring on its own or as part of a scrumptious recipe. Here’s a seasonal favourite…
+						</p>
+						<p id="read">Full report on page 3</p>
+				</section>
+				<section id="c2" class="col-4">
+					<div id="extra1">
+						<h6>FIND US</h6>
+						<div class="caixa">
+							<img src="images/img3.jpg">
+						</div>
+						<p>
+							<b>Belconnen markets</b><br>
+							10 lathlain st, belconnen<br>
+							Act 2617, Australia<br>
+							Open wed-sun 8:00AM-6:00pm
+						</p>
+						<p>
+							<b>Fyshwick markets</b><br>
+							12 Dalby st, Fyshwick act<br>
+							2609, australia<br>
+							Open the-sun 7:00AM-5:30PM
+						</p>
+					</div>
+				</section>
+			</div>
+			<!-- 2 -->
+			<div id="l2" class="col-12">
+				<section id="c3" class="col-3">
+					<div  id="extra2">
+						<div class="caixa">
+							<img src="images/img4.jpg">
+						</div>
+						<h6>GET IN<br>TOUCH</h6>
+						<h4><b>CALL US</b></h4>
+						<p>0436 455 551</p>
+						<h4><b>EMAIL US</b></h4>
+						<li><a href="#">CLICK HERE</a></li>
+					</div>
+				</section>
+				<section id="c4" class="col-9">
+					<hgroup>
+						<h8>STRAIGHT FROM<br>THE SOURCE</h8>
+						<h4>SEA HARVEST FRESH</h4>
+						<div class="col-8">
+							<p>
+								The blue green waters off the south east coast of Australia glisten as the sun rises above the horizon. Up early and eager, local fishermen brave the choppy seas as they collect their daily yield. Dedicated to preservation, they work extra hard to follow environmentally sustainable fishing practices – including avoiding overfishing, staying clear of protected areas, releasing protected species, and using safe fishing gear. As they arrive back at the docks, the huge array of fresh seafood is put on ice and shipped directly to Sea Harvest’s door in Canberra. Oysters, prawns, mussels, calamari, lobster, snapper, and every seasonal fish available travels straight from sea to store, just for you.
+							</p>
+						</div>
+					</hgroup>
+					<div class="caixa">
+						<img id="fish" src="images/img5.jpg">
+					</div>
+				</section>
+			</div>
+			<!-- 3 -->
+			<div  id="l3" class="row">
+				<section id="c5" class="col-4">
+					<hgroup>
+						<h7>THE SEA<br>HARVEST<br>STORY</h7>
+						<h4>A TALE OF FISH AND FAMILY</h4>
+						<img src="images/img6.jpg">
+						<p>
+							The Sea Harvest story begins in the 1800s on a small, picturesque fishing island called Lefkada in Greece. For generations since, our love of the sea and taste for seafood has endured, following us to Canberra where we settled in the 1970s. For over 40 years now, we have dedicated ourselves to bringing the finest and freshest Australian seafood to our nation’s capital.
+						</p>
+						<p id="read">Read more on page 8</p>
+					</hgroup>
+					<div id="c9" class="col-12">
+						<h5></h5>
+					</div>
+				</section>
+				<section id="c6" class="col-4">
+					<hgroup>
+						<h7>BATEMANS<br>BAY<br>FISHING<br>TIPS</h7>
+						<h4>SCORE THE BEST CATCH</h4>
+						<img src="images/img7.jpg">
+						<p>
+							Cars will soon be bumper-to-bumper on the Clyde and Brown mountains as Canberrans pour out of the capital to feel the sun on their backs and…
+						</p>
+						<p id="read">Continued on page 11</p>
+					</hgroup>
+				</section>
+				<section id="c7" class="col-4">
+					<hgroup>
+						<h7>FRESH AS<br>IT GETS</h7>
+						<h4>A TASTE OF THE SEA</h4>
+						<img src="images/img8.jpg">
+						<p>
+							Sea Harvest’s seafood is trusted by many of the best seafood restaurants in Canberra. We are obsessed with cleanliness and quality, and only buy from suppliers who are 100% committed to sustainable fishing practices and the long term protection of sea life. We buy fresh so that we can sell fresh, and pride ourselves on bringing the best of the coast to the capital.
+						</p>
+					</hgroup>
+					<div id="c9" class="col-12">
+						<h5>SEA HARVEST</h5>
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
+	<footer class="col-12">
+		<div class="container">
+			<div id="f1" class="col-5">©2018 SEA HARVEST AUSTRALIA, FRESH SEAFOOD MARKET</div>
+			<div id="f2" class="col-4">BELCONNEN MARKETS / FYSHWICK MARKETS</div>
+			<div id="f3" class="col-3">CODE BY OM.</div>
+		</div>
+	</footer>
+</body>
+</html>
